@@ -20,7 +20,7 @@ Scala
 Java
 : @@snip [snip](/doc-examples/src/test/java/akka/stream/alpakka/eip/javadsl/SplitterExamples.java) { #Simple-Split }
 
-## Spliter + Aggregator
+## Splitter + Aggregator
 
 Sometimes it's very useful to split a message and aggregate it's "sub-messages" into a new message (A combination of [Splitter](http://www.enterpriseintegrationpatterns.com/patterns/messaging/Sequencer.html) and [Aggregator](http://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html)) 
 
@@ -47,7 +47,7 @@ the message can be used inside a flow (transform it, save it inside a database, 
 It can be used whenever you have 2 flows:
 
 - Flow1 that takes a message `A` and returns `B`
-- Flow2 that takes a message `A` and return `C`
+- Flow2 that takes a message `A` and returns `C`
 
 If you want to execute first Flow1 and then Flow2 you need a way to 
 maintain/passthrough message `A`. 
